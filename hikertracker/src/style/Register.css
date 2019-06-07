@@ -1,0 +1,43 @@
+.backgroundImg{
+    background-image: url('../images/loginBackground.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signInDiv{
+    display: flex;
+    flex-direction: column;
+    padding:5%;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+
+.registerDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-color: rgba(128, 128, 128, 0.603);
+}
+
+.mt {
+    margin-top: 25% !important;
+  }
+
+.messageStyling{
+    align-self: center;
+}
+
+.ml-1 {
+    margin-right: 20% !important;
+}
+
+.mt-0{
+    margin-bottom: 5% !important;
+}
+
+.row{
+    align-items: center;
+    margin-left: 136px;
+}

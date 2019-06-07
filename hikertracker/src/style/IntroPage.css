@@ -1,0 +1,47 @@
+
+
+.background{
+    background: url('../images/mountain.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logoDiv{
+    text-align: center;
+}
+
+.logoStyling{
+    background-color: rgba(196, 193, 193, 0.201);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 5%;
+    
+}
+p{
+    margin-top: 19px;
+}
+.paragraphStyling{
+    margin-top: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.buttonsDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.introPageButtonStyling{
+    margin-right: 2%;
+    border-radius: 11%;
+    color: rgb(214, 106, 18);
+    box-shadow: 2rem;
+}
+
+.introPageButtonStyling:hover{
+    background-color: rgba(229, 229, 235, 0.76);
+}

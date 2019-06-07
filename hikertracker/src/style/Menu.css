@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+
+    span.navbar-brand{
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 988px){
+
+    span.navbar-brand{
+        display: none;
+    }
+}
+
+#basic-navbar-nav{
+    margin-left: 65%;
+}
+
+
+.imgStyling{
+    width: 13%;
+    height: auto;
+} 
+
+.navLink{
+   padding-top: 7px;
+    padding-right: 25px;
+    list-style: none;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding-bottom:1px;
+    color: #007bff
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    color: #0056b3;
+
+}

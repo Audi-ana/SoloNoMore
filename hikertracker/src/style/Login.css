@@ -1,0 +1,18 @@
+
+
+.messageStyling{
+ align-self: center;
+ padding-top: 8%;
+}
+
+.buttonStyling{
+width: 100%;
+ border: none;
+ border-radius: 5%; 
+ background-color: rgb(214, 106, 18);
+ color: white;
+}
+
+.inputStyling{
+    width: 100%
+}
