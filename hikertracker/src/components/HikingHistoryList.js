@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {connect} from "react-redux"
 import axios from 'axios'
 import '../style/HikingHistoryList.css'
-import Time from 'react-time-format'
+import Moment from 'react-moment';
+// import Time from "react-time-format"
 
 class HikingHistoryList extends Component{
 
@@ -17,7 +18,7 @@ class HikingHistoryList extends Component{
 populateHikes(){
 
      //fetching hiking records
-     let url = 'http://localhost:8080/api/hiking-history'
+     let url = 'https://solonomore-backend.herokuapp/api/hiking-history'
      axios.get(url)
      .then(response => {
          console.log(response.data)
@@ -27,7 +28,7 @@ populateHikes(){
 
     deleteButtonClick = (recordId) =>{
         
-        let url = `http://localhost:8080/delete/${recordId}`
+        let url = `https://solonomore-backend.herokuapp/delete/${recordId}`
 
         axios.delete(url)
         .then( res =>{
@@ -52,7 +53,7 @@ populateHikes(){
         let record = records.map((record)=>{
             return <li className="listStylingDiv" key={record.id}>
             Shareable coordinates link: <a className="logLatLinkStyling"href={`https://www.latlong.net/c/?lat=${record.latitude}&long=${record.longitude}`}>{record.latitude}, {record.longitude}</a>
-            <span>Date and Time recorded: <i><Time value={record.timestamp} format="MM-DD-YYYY hh:mm"/></i></span>
+            <span>Date and Time recorded: <i><Moment parse="YYYY-MM-DD HH:mm">{record.timestamp} </Moment></i></span>
             <button className="deleteButtonStyling"onClick={() => this.deleteButtonClick(record.id)}>Delete</button>
             </li>
         })

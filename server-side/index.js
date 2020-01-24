@@ -6,6 +6,7 @@ const cors = require('cors')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const saltRounds = 10;
+const PORT = process.env.PORT || 8080
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -140,6 +141,6 @@ app.delete('/delete/:id', authenticate,(req, res)=>{
     })
 
 
-app.listen(8080, ()=>{
+app.listen(PORT, ()=>{
     console.log('Server is running...')
 })

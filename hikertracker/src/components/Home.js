@@ -27,7 +27,7 @@ class Home extends Component{
             // dispatch action
             this.props.newhike(coordinates)
             console.log(coordinates)
-                let url = 'http://localhost:8080/api/record-hike'
+                let url = 'https://solonomore-backend.herokuapp/api/record-hike'
                 axios({
                     method: 'post',
                     url: url,

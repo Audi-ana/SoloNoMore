@@ -21,7 +21,7 @@ class Login extends Component{
 
     handleLoginClick = ()=>{
 
-        axios.post('http://localhost:8080/login',{
+        axios.post('https://solonomore-backend.herokuapp/login',{
             username: this.state.username,
             password: this.state.password
         }).then((response) =>{

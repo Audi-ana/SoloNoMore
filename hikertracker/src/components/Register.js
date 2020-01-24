@@ -28,7 +28,7 @@ export class Register extends Component{
 
     handleRegisterClick = () =>{
        
-        let url = 'http://localhost:8080/register'
+        let url = 'https://solonomore-backend.herokuapp/register'
             
        axios({
         method: 'post',
