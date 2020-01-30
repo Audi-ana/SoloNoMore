@@ -66,7 +66,7 @@ app.post('/login', (req,res)=>{
     .then((user)=>{
         if(!user){
              
-            res.json({message:'Somethings not quite right, try again!'})
+            res.json({message:'Username not found, try again!'})
         }else{
             bcrypt.compare(req.body.password, user.password, function(err, result){
                 if(result == true){

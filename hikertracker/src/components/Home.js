@@ -27,7 +27,7 @@ class Home extends Component{
             // dispatch action
             this.props.newhike(coordinates)
             console.log(coordinates)
-                let url = 'https://solonomore-backend.herokuapp/api/record-hike'
+                let url = 'https://localhost:3000/api/record-hike'
                 axios({
                     method: 'post',
                     url: url,
@@ -47,7 +47,7 @@ class Home extends Component{
                 <p>It's simple press the button below. Your current coordinates will then appear at the bottom of your recorded hikes list. There you will be able to click on the coordinates link and view your location on a map. Send the link to your loved ones and keep hiking! Don't lose your sense of adventure and stay safe!</p>
                 </div>
             <div className='containerDiv'>
-            <img src={require('../images/soloHiker.jpg')}></img>
+            <img src={require('../images/soloHiker.jpg')} alt="Foggy Mountains and stream"></img>
             <button  className="recordHikeButton" onClick={this.getGeolocation}>Record hike</button>
             </div>
             <HikingHistoryList></HikingHistoryList>

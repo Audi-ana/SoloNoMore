@@ -18,7 +18,7 @@ class HikingHistoryList extends Component{
 populateHikes(){
 
      //fetching hiking records
-     let url = 'https://solonomore-backend.herokuapp/api/hiking-history'
+     let url = 'https://localhost:3000/api/hiking-history'
      axios.get(url)
      .then(response => {
          console.log(response.data)
@@ -28,7 +28,7 @@ populateHikes(){
 
     deleteButtonClick = (recordId) =>{
         
-        let url = `https://solonomore-backend.herokuapp/delete/${recordId}`
+        let url = `https://localhost:3000/delete/${recordId}`
 
         axios.delete(url)
         .then( res =>{
